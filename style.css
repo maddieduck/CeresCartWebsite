@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Nunito,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,system-ui,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+#name{
+    font-size: 25px;
+    color: rgb(15, 14, 14);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 16px;
+}
+#ceresCartLogo{
+    height: 40px;
+    align-items: center;
+}
+nav a {
+    font-size: 18px;
+    color: rgb(17, 16, 16);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+nav a:hover,
+nav a.active {
+    color: #6dab9b;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    font-size: 100px;
+    color: rgb(9, 8, 8);
+    font-weight: 700;
+}
+h1{
+    font-weight: 250;
+    font-size: 50px;
+}
+h2{
+    font-weight: 250;
+    font-size: 38px;
+}
+h3{
+    padding-top: 16px;
+    font-weight: 200;
+    font-size: 30px;
+}
+h4{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 0px;
+}
+h5{
+    font-weight: 200;
+    font-size: 16px;
+    padding-top: 16px;
+}
+h6{
+    font-weight: 200;
+    font-size: 16px;
+    margin: 0;
+}
+#pricing{
+    background-color: #F0F0F0;
+}
+#pricingDiv{
+    width: 460px;
+    margin-left: 16px;
+}
+.outmostPricingDiv{
+    width: 300px;
+    border: 2px solid black; /* Set the border to black with 2px width */
+    border-radius: 10px; 
+    margin-left: 16px;
+    height: 340px; 
+}
+.checkmark{
+    height: 16px;
+    width: auto;
+    margin-right: 8px;
+}
+.benefit{
+    display: flex;
+    padding-top: 16px;
+    align-items: center; /* Align items vertically in the center */
+}
+.pinkDiv{
+    height: 136px; 
+    background-color: rgb(255, 180, 195);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    padding-left: 16px;
+}
+.greenDiv{
+    height: 136px; 
+    background-color: rgb(110, 190, 175); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    padding-left: 16px;
+}
+.blackDiv{
+    height: 200px; 
+    background-color: rgb(0, 0, 0); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    color: white; 
+    padding-left: 16px;
+}
+#homeText{
+    display: flex; 
+    flex-direction: column; 
+    padding-left: 16px;
+    width: 500px;
+}
+#downloadButton{
+    color: white; 
+    background-color: #000000;
+    height: 50px;
+    width: 320px;
+    border-radius: 10px; 
+    cursor: pointer; 
+    margin-top: 16px;
+    box-shadow: none; 
+    outline: none; 
+    border: 1px solid black; 
+    align-items: center; /* Center items vertically */
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+}
+#downloadButton:hover {
+    background-color: #7c77b9;
+  }
+#extensionPayButton{
+    color: white; 
+    background-color: #000000;
+    height: 50px;
+    width: 160px;
+    border-radius: 10px; 
+    cursor: pointer; 
+    box-shadow: none; 
+    outline: none; 
+    border: 1px solid black; 
+    align-items: center; /* Center items vertically */
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center; /* Center text horizontally */
+}
+#extensionPayButton:hover {
+    background-color: rgb(110, 170, 155); 
+  }
+#contact{
+    display: flex; 
+    flex-direction: column; 
+    background: rgb(255, 225, 105);
+    min-height: 30vh;
+}
+.chromeLogoInButton {
+    width: 32px; 
+    height: auto; 
+    margin-right: 16px;
+    margin-left: 8px;
+}
+.hyperlink{
+    text-decoration: none; 
+    display: inline-block;
+    height: auto;
+}

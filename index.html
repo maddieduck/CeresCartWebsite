@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceres Cart Website</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body> 
+    <header>
+        <div style="display: flex; align-items: center;"> 
+            <img id="ceresCartLogo" src="images/Ceres Cart Logo.svg" alt="Ceres Cart Logo">
+            <a href="#" id="name">Ceres Cart</a> 
+        </div>  
+        <nav style="display: flex; align-items: center;"> 
+            <a href="#home" class="active">Home</a> 
+            <!-- <a href="#product">Product</a> -->
+            <a href="#pricing">Pricing</a> 
+            <a href="#contact">Contact</a>
+        </nav> 
+    </header>  
+    <section id="home">   
+        <div id="homeText"> 
+            <h1 style="align-self: flex-start;">Browse.</h1> 
+            <h1 style="align-self: flex-start;">Export. Checkout. </h1> 
+            <h3 style="align-self: flex-start;">Ceres Cart offers a streamlined method for transferring ingredients from your favorite recipes to your online grocery cart.</h3>     
+            <a href="https://chromewebstore.google.com/" target="_blank" class="hyperlink">
+                <button id="downloadButton"> <img src="images/chrome logo.png" alt="chrome image" class="chromeLogoInButton"> 
+                    Install from Chrome Web Store
+                </button>
+            </a> 
+        </div>  
+    </section>  
+    <!-- <section id="product">Product</section> -->
+    <section id="pricing">
+        <div style="display: flex;">   
+            <div id="pricingDiv">   
+                <h2>Pricing Options</h2>  
+                <h4 style="padding-top: 16px;">Our app offers flexible pricing options to suit every user's needs. 
+                    With our free tier, users can enjoy the app's features at no cost, 
+                    including the ability to export up to three recipes. For those who 
+                    require more, we offer a premium subscription at just $0.99 a month, 
+                    unlocking unlimited recipe exports. With transparent and straightforward pricing, 
+                    our goal is to provide accessible and valuable services, ensuring that everyone can enjoy the benefits of our app.
+                </h4> 
+            </div>    
+            <div class="outmostPricingDiv">
+                <div class="blackDiv">  
+                    <h3>Free</h3>
+                    <div style="display: flex;">
+                        <h5>US$</h5> 
+                        <h2>0</h2> 
+                    </div>
+                </div>
+                <div class="pinkDiv"> 
+                    <div class="benefit">
+                        <img class="checkmark" src="images/checkmark.png">
+                        <h6>View ingredients</h6>
+                    </div>
+                    <div class="benefit">
+                        <img class="checkmark" src="images/checkmark.png">
+                        <h6>View price when a location is selected</h6>
+                    </div>
+                    <div class="benefit"> 
+                        <img class="checkmark" src="images/checkmark.png">
+                        <h6>Export 3 Recipes</h6>
+                    </div>   
+                </div>
+            </div>
+            <div class="outmostPricingDiv">
+                <div class="blackDiv">  
+                    <h3>Primo</h3>
+                    <div style="display: flex;">
+                        <h5>US$</h5> 
+                        <h2>0.99</h2> 
+                    </div>
+                    <h4>Every Month</h4> 
+                    <h4>Cancel Whenever</h4> 
+                </div>
+                <div class="greenDiv">
+                    <div class="benefit"> 
+                        <img class="checkmark" src="images/checkmark.png">
+                        <h6>Everything in Free!</h6>
+                    </div>    
+                    <div class="benefit">
+                        <img class="checkmark" src="images/checkmark.png">
+                        <h6>Plus unlimited exports!</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 style="margin-bottom: 16px;">Contact</h2>  
+        <h4 style="font-weight: 500;">Customer Care</h4> 
+        <h4>contact@cerescart.com</h4> 
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

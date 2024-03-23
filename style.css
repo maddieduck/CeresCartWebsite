@@ -184,3 +184,8 @@ h6{
     display: inline-block;
     height: auto;
 }
+.userSurvey{
+    color: rgb(0, 0, 0); 
+    font-weight: 200;
+    font-size: 16px;
+}

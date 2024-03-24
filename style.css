@@ -78,8 +78,8 @@ h6{
     font-size: 16px;
     margin: 0;
 }
-#pricing{
-    background-color: #F0F0F0;
+#product{
+    background-color: #f5f5f5;
 }
 #pricingDiv{
     width: 460px;
@@ -188,4 +188,17 @@ h6{
     color: rgb(0, 0, 0); 
     font-weight: 200;
     font-size: 16px;
+}
+#productDiv{
+    margin-left: 16px;
+}
+.productImageAndText{
+    width: 230px;
+    margin-right: 32px;
+}
+.productImage{
+    width: 230px; 
+    height: auto; 
+    border: 2px solid black; 
+    border-radius: 10px; 
 }

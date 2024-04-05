@@ -104,14 +104,14 @@ h6{
 }
 .pinkDiv{
     height: 136px; 
-    background-color: rgb(255, 180, 195);
+    background-color: rgb(245, 206, 218);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; 
     padding-left: 16px;
 }
 .greenDiv{
     height: 136px; 
-    background-color: rgb(110, 190, 175); 
+    background-color: rgb(148, 201, 186);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; 
     padding-left: 16px;
@@ -201,4 +201,17 @@ h6{
     height: auto; 
     border: 2px solid black; 
     border-radius: 10px; 
+}
+#integrations{
+    min-height: 55vh;
+    background: rgb(187, 184, 214);
+}
+.black-svg {
+    filter: invert(100%);
+}
+#krogerLogo{
+    padding-top: 16px;
+    padding-left: 172px;
+    height: 80px;
+    align-items: center;
 }

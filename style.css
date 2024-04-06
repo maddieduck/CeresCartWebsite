@@ -184,10 +184,17 @@ h6{
     display: inline-block;
     height: auto;
 }
-.userSurvey{
+#userSurvey{
     color: rgb(0, 0, 0); 
     font-weight: 200;
     font-size: 16px;
+}
+#privacyPolicy{
+    color: rgb(0, 0, 0); 
+    font-weight: 200;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
 }
 #productDiv{
     margin-left: 16px;

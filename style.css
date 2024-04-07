@@ -222,3 +222,27 @@ h6{
     height: 80px;
     align-items: center;
 }
+.divider{
+    position: relative;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    top: 0px;
+    background-color: #f5f5f5;
+}
+.divider svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 45px;
+}
+.homeAndProductDivider{
+    fill: #ffffff;
+    background-color: #f5f5f5;
+}
+.productAndIntegrationsDivider{
+    transform: scaleX(-1); 
+    background-color: #ffffff;
+    fill: rgb(187, 184, 214);
+}

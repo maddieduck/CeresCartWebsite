@@ -35,7 +35,6 @@ header {
     align-items: center;
 }
 #menuBar{
-    margin-top: 80px;
     font-size: 115%;
     display: none;
     
@@ -45,14 +44,13 @@ header {
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .hideOnMobile {
         display: none;
     }
     .menu {
         display: flex; /* Change to flex for mobile */
     }
-
 }
 
 nav a {

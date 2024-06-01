@@ -23,6 +23,10 @@ header {
     font-weight: 600;
     margin-left: 16px;
 }
+#head{
+    padding-left: 10%;
+    padding-right: 10%;
+}
 #ceresCartLogo{
     height: 40px;
     align-items: center;
@@ -31,11 +35,13 @@ header {
     margin-top: 80px;
     font-size: 115%;
     display: none;
+    
 }
 .menu{
     height:25px; 
     display: none;
 }
+
 @media (max-width: 800px) {
     .hideOnMobile {
         display: none;

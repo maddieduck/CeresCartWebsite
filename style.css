@@ -50,7 +50,7 @@ header {
         display: flex; /* Change to flex for mobile */
     }
     #head{
-        padding-left: 10%;
+        padding-left: 0;
         padding-right: 10%;
     }
 }

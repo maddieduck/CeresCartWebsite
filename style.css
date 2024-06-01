@@ -26,6 +26,9 @@ header {
 #head{
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 #ceresCartLogo{
     height: 40px;
@@ -50,8 +53,8 @@ header {
         display: flex; /* Change to flex for mobile */
     }
     #head{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 

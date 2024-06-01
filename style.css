@@ -24,8 +24,8 @@ header {
     margin-left: 16px;
 }
 #head{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #ceresCartLogo{
     height: 40px;
@@ -48,6 +48,10 @@ header {
     }
     .menu {
         display: flex; /* Change to flex for mobile */
+    }
+    #head{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

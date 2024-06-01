@@ -45,11 +45,16 @@ header {
 }
 
 @media (max-width: 600px) {
-    .hideOnMobile {
+    .hideOnMobile { 
         display: none;
     }
     .menu {
         display: flex; /* Change to flex for mobile */
+    }
+}
+@media (min-width: 601px) {
+    #menuBar {
+        display: none !important; /* Hide menu bar on larger screens */
     }
 }
 

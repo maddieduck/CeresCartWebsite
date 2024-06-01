@@ -25,7 +25,7 @@
             </ul>    
         </nav>      
     </div> 
-    <div id="menuBar"> 
+    <div id="menuBar" style="display: none;"> 
         <nav style="display: flex; justify-content: center; align-items: center; width: 100%;"> 
             <ul style="list-style: none; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0; margin: 0;">
                 <li><a href="#home">Home</a></li>
@@ -35,7 +35,7 @@
             </ul>
         </nav>  
     </div>
-    <script>
+    <script>//displays the menuBar when menu is pressed 
         document.addEventListener('DOMContentLoaded', function() {
             const menuIcon = document.querySelector('.menu');
             const menuBar = document.getElementById('menuBar');
@@ -50,6 +50,7 @@
             });
         });
     </script>
+
     <section id="home">   
         <div id="homeText"> 
             <h1 style="align-self: flex-start;">Browse.</h1> 

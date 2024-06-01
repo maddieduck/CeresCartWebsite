@@ -1,14 +1,3 @@
-/*
-import {ExtPay} from './ExtPay.js'
-function openExtensionPay(){
-    const extpay = ExtPay('ceres-cart')
-    extpay.openPaymentPage();
-}
-
-var button = document.getElementById("extensionPayButton");
-button.addEventListener("click", openExtensionPay);
-*/ 
-
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 window.onscroll = () => {
@@ -25,4 +14,6 @@ window.onscroll = () => {
         };
     });
 };
+
+
 

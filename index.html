@@ -7,19 +7,47 @@
     <title>Ceres Cart Website</title>
     <link rel="stylesheet" href="style.css">
 </head> 
-<body> 
+<body>  
     <header>
-        <div style="display: flex; align-items: center;"> 
+        <div id="headerLogo"> 
             <img id="ceresCartLogo" src="images/Ceres Cart Logo.svg" alt="Ceres Cart Logo">
             <a href="#" id="name">Ceres Cart</a> 
         </div>  
         <nav style="display: flex; align-items: center;"> 
-            <a href="#home" class="active">Home</a> 
-            <a href="#product">Product</a>
-            <a href="#pricing">Pricing</a> 
-            <a href="#contact">Contact</a>
-        </nav> 
-    </header>  
+            <ul style="list-style: none; display: flex;">
+                <li><a href="#home" class="active hideOnMobile">Home</a></li>
+                <li><a href="#product" class="hideOnMobile">Product</a></li>
+                <li><a href="#pricing" class="hideOnMobile">Pricing</a></li>
+                <li><a href="#contact" class="hideOnMobile">Contact</a></li>
+                <li><a href="#" class="menu"><img src="images/menu.png" alt="Menu" class="menu-image"></a></li>
+            </ul>    
+        </nav>       
+    </header> 
+    <div id="menuBar"> 
+        <nav style="display: flex; align-items: center;"> 
+            <ul style="list-style: none;"> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>  
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu');
+            const menuBar = document.getElementById('menuBar');
+
+            menuIcon.addEventListener('click', function(event) {
+                event.preventDefault();
+                if (menuBar.style.display === 'none' || menuBar.style.display === '') {
+                    menuBar.style.display = 'block';
+                } else {
+                    menuBar.style.display = 'none';
+                }
+            });
+        });
+    </script>
     <section id="home">   
         <div id="homeText"> 
             <h1 style="align-self: flex-start;">Browse.</h1> 

@@ -68,14 +68,37 @@
         </svg> 
     </div>         
     <section id="product">
-        <div class="sticky-image-container">
-            <img class="sticky-image" src="images/Desktop Background.png" alt="Sticky Image">
+        <div>
+            <img src="/images/Desktop Background.png" alt="Sticky Image" class="desktopImage">
         </div>
-        <div class="scrollable-div">
-            <div class="content">
-                Scrollable Content
-            </div>
-        </div>
+        <script>
+            document.addEventListener('scroll', function() {
+                var productSection = document.getElementById('product');
+                var desktopImage = document.querySelector('.desktopImage');
+                var rect = productSection.getBoundingClientRect();
+                // Check if the section is in the viewport
+                if (rect.top > 0 ) { //above the product section
+                    desktopImage.style.position = 'absolute'; 
+                    desktopImage.style.top = '50vh'; 
+                    desktopImage.style.transform = 'translateY(-50%)'; 
+                    desktopImage.style.bottom = ''; 
+                }else if(rect.bottom < window.innerHeight){ //below the product section
+                    desktopImage.style.position = 'absolute'; 
+                    desktopImage.style.bottom = '50vh'; 
+                    desktopImage.style.top =  ''; 
+                    desktopImage.style.transform = 'translateY(50%)'; 
+
+                } else { //in the product section 
+                    desktopImage.style.position = 'fixed'; 
+                    desktopImage.style.top = '50%'; 
+                    desktopImage.style.transform = 'translateY(-50%)'; 
+                    desktopImage.style.bottom = ''; 
+                }        
+            });
+        </script>
+        <div>
+            HELLO
+        </div>                 
     </section>
     <section id="integrations" style="display: block;"> 
         <h2 style="padding-left: 172px; padding-top: 80px;">Integrations</h2>  

@@ -70,11 +70,13 @@
     <section id="product">
         <div>
             <img src="/images/Desktop Background.png" alt="Sticky Image" class="desktopImage">
+            <img src="/images/screenshot.jpg" alt="Sticky Image" class="screenshot">
         </div>
         <script>
             document.addEventListener('scroll', function() {
                 var productSection = document.getElementById('product');
                 var desktopImage = document.querySelector('.desktopImage');
+                var screenshot = document.querySelector('.screenshot');
                 var rect = productSection.getBoundingClientRect();
                 // Check if the section is in the viewport
                 if (rect.top > 0 ) { //above the product section
@@ -82,22 +84,36 @@
                     desktopImage.style.top = '50vh'; 
                     desktopImage.style.transform = 'translateY(-50%)'; 
                     desktopImage.style.bottom = ''; 
+                    screenshot.style.position = 'absolute'; 
+                    screenshot.style.top = '50vh'; 
+                    screenshot.style.transform = 'translateY(-50%)'; 
+                    screenshot.style.bottom = ''; 
                 }else if(rect.bottom < window.innerHeight){ //below the product section
                     desktopImage.style.position = 'absolute'; 
                     desktopImage.style.bottom = '50vh'; 
                     desktopImage.style.top =  ''; 
                     desktopImage.style.transform = 'translateY(50%)'; 
-
+                    screenshot.style.position = 'absolute'; 
+                    screenshot.style.bottom = '50vh'; 
+                    screenshot.style.top =  ''; 
+                    screenshot.style.transform = 'translateY(50%)'; 
                 } else { //in the product section 
                     desktopImage.style.position = 'fixed'; 
                     desktopImage.style.top = '50%'; 
                     desktopImage.style.transform = 'translateY(-50%)'; 
                     desktopImage.style.bottom = ''; 
+                    screenshot.style.position = 'fixed'; 
+                    screenshot.style.top = '50%'; 
+                    screenshot.style.transform = 'translateY(-50%)'; 
+                    screenshot.style.bottom = ''; 
                 }        
             });
         </script>
-        <div>
-            HELLO
+        <div id="hello">
+            Auto Detects Recipes
+        </div>  
+        <div id="hello">
+            Automatically shows up when a user is viewing a recipe
         </div>                 
     </section>
     <section id="integrations" style="display: block;"> 

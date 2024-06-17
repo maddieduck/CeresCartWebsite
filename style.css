@@ -126,14 +126,35 @@ h6{
     height: 400vh;
     overflow: hidden;
     position: relative;
-    overflow-y: auto; /* Ensures the section scrolls */
+    overflow-y: auto; 
+    display: flex;
+}
+#productImages{
+    width: 50%; /* 50% of the width for images */
 }
 .desktopImage {
     left: 0; 
-    width: 55%; 
+    width: 50%; 
     margin: 0;
     padding: 0;
     border: 0;
+}
+.productText {
+    width: 50%; 
+    padding: 0;
+    border: 0;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    margin-right: 10px;
+}
+.largerProductText{
+    font-size: 55%;
+    font-weight: 200;
+}
+.smallerProductText{
+    font-size: 35%;
+    font-weight: 200;
 }
 .screenshot {
     left: 20%; 
@@ -277,6 +298,4 @@ h6{
     background-color: #ffffff;
     fill: rgb(187, 184, 214);
 }
-#hello{
-    color: #FEE169;
-}
+

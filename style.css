@@ -139,22 +139,31 @@ h6{
     padding: 0;
     border: 0;
 }
-.productText {
+#allProductText {
     width: 50%; 
     padding: 0;
     border: 0;
     display: flex; 
     flex-direction: column; 
-    justify-content: center; 
-    margin-right: 10px;
+    margin-right: 20px;
+}
+.productText {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
 }
 .largerProductText{
-    font-size: 55%;
-    font-weight: 200;
+    font-size: 45%;
+    font-weight: 350;
+    color: #6dab9b;
 }
 .smallerProductText{
     font-size: 35%;
     font-weight: 200;
+    margin-top: 10px;
 }
 .screenshot {
     left: 20%; 

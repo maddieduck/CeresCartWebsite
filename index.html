@@ -70,7 +70,7 @@
     <section id="product">
         <div id="productImages">
             <img src="/images/Desktop Background.png" alt="Sticky Image" class="desktopImage">
-            <img src="/images/Screenshot 1.png" alt="Sticky Image" class="screenshot">
+            <img id="screenshot" src="/images/Screenshot 2.png" alt="Sticky Image" class="screenshot">
         </div>
         <script>
             document.addEventListener('scroll', function() {
@@ -78,6 +78,7 @@
                 var desktopImage = document.querySelector('.desktopImage');
                 var screenshot = document.querySelector('.screenshot');
                 var rect = productSection.getBoundingClientRect();
+
                 // Check if the section is in the viewport
                 if (rect.top > 0 ) { //above the product section
                     desktopImage.style.position = 'absolute'; 
@@ -106,7 +107,34 @@
                     screenshot.style.top = '50%'; 
                     screenshot.style.transform = 'translateY(-50%)'; 
                     screenshot.style.bottom = ''; 
-                }        
+                }
+
+                // Calculate scroll percentage
+                const scrollTop = window.scrollY;
+                const sectionTop = productSection.offsetTop;
+                const sectionHeight = productSection.scrollHeight;
+                const scrollPercentage = (scrollTop - sectionTop) / (sectionHeight - window.innerHeight);
+                const screenshotImage = document.getElementById('screenshot');
+                console.log('screen percent scroll', scrollPercentage)
+                if (scrollPercentage < 0.1) {
+                    screenshotImage.src = '/images/Screenshot 1.png';
+                } else if (scrollPercentage < 0.2) {
+                    screenshotImage.src = '/images/Screenshot 2.png';
+                } else if (scrollPercentage < 0.3) {
+                    screenshotImage.src = '/images/Screenshot 3.png';
+                } else if (scrollPercentage < 0.4) {
+                    screenshotImage.src = '/images/Screenshot 4.png';
+                } else if (scrollPercentage < 0.5) {
+                    screenshotImage.src = '/images/Screenshot 5.png';
+                } else if (scrollPercentage < 0.6) {
+                    screenshotImage.src = '/images/Screenshot 6.png';
+                } else if (scrollPercentage < 0.7) {
+                    screenshotImage.src = '/images/Screenshot 7.png';
+                } else if (scrollPercentage < 0.8) {
+                    screenshotImage.src = '/images/Screenshot 8.png';
+                } else if (scrollPercentage < 0.9) {
+                    screenshotImage.src = '/images/Screenshot 9.png';
+                }   
             });
         </script>
         <div id="allProductText">
@@ -144,8 +172,8 @@
             </div>
         </div>
     </section>
-    <section id="integrations" style="display: block;"> 
-        <h2 style="padding-left: 172px; padding-top: 80px;">Integrations</h2>  
+    <section id="integrations" style="display: block; "> 
+        <h2 style="padding-left: 172px; padding-top: 80px; font-weight: 500;">Integrations</h2>  
         <h4 style="padding-left: 172px; padding-top: 24px; width: 700px;">
             Presently, our app exclusively integrates with Kroger, ensuring seamless 
             grocery shopping experiences. Rest assured, we're diligently expanding our 
@@ -161,7 +189,7 @@
     <section id="pricing">
         <div style="display: flex;">   
             <div id="pricingDiv">   
-                <h2>Pricing Options</h2>  
+                <h2 style="font-weight: 500;">Pricing Options</h2>  
                 <h4 style="padding-top: 16px;">Our app offers flexible pricing options to suit every user's needs. 
                     With our free tier, users can enjoy the app's features at no cost, 
                     including the ability to export up to three recipes. For those who 
@@ -217,7 +245,7 @@
         </div>
     </section>
     <section id="contact">
-        <h2 style="margin-bottom: 16px;">Contact</h2>  
+        <h2 style="margin-bottom: 16px; font-weight: 500;">Contact</h2>  
         <h4 style="font-weight: 500;">Customer Care</h4> 
         <h4>contact@cerescart.com</h4> 
         <a id="userSurvey" href="https://forms.gle/ZuRL5oJDsKHooC7N8" target="_blank">Submit Feedback</a>

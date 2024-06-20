@@ -123,7 +123,7 @@ h6{
 }
 #product{
     background-color: #f5f5f5;
-    height: 400vh;
+    height: 340vh;
     overflow: hidden;
     position: relative;
     overflow-y: auto; 
@@ -148,7 +148,7 @@ h6{
     margin-right: 20px;
 }
 .productText {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -157,7 +157,7 @@ h6{
 }
 .largerProductText{
     font-size: 45%;
-    font-weight: 350;
+    font-weight: 500;
     color: #6dab9b;
 }
 .smallerProductText{
@@ -166,7 +166,7 @@ h6{
     margin-top: 10px;
 }
 .screenshot {
-    left: 20%; 
+    left: 15%; 
     width: 25%; 
     margin: 0;
     padding: 0;

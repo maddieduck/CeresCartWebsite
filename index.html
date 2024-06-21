@@ -99,7 +99,8 @@
                     desktopImage.style.transform = 'translateY(-50%)'; 
                     desktopImage.style.bottom = ''; 
                 }
-                screenshot.style.top = (desktopImageRect.top + 45) + 'px';
+                var offset = desktopImageRect.height * 0.1;
+                screenshot.style.top = (desktopImageRect.top + offset) + 'px';
 
                 // Calculate scroll percentage
                 const scrollTop = window.scrollY;

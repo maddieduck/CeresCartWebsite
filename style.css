@@ -279,7 +279,7 @@ h6{
     display: block;
 }
 #integrationsHeader{
-    padding-top: 80px; 
+    padding-top: 10%; 
     font-weight: 500;
 }
 #integrationsBody{

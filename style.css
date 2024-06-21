@@ -272,15 +272,25 @@ h6{
     margin-top: 16px;
 }
 #integrations{
+    padding-left: 10%;
+    padding-right: 10%;
     min-height: 55vh;
     background: rgb(187, 184, 214);
+    display: block;
+}
+#integrationsHeader{
+    padding-top: 80px; 
+    font-weight: 500;
+}
+#integrationsBody{
+    padding-top: 24px; 
+    width: 100%;
 }
 .black-svg {
     filter: invert(100%);
 }
 #krogerLogo{
     padding-top: 16px;
-    padding-left: 172px;
     height: 80px;
     align-items: center;
 }
@@ -309,4 +319,5 @@ h6{
     background-color: #ffffff;
     fill: rgb(187, 184, 214);
 }
+
 

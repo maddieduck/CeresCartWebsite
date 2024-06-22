@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceres Cart Website</title>
+    <link rel="stylesheet" href="allPages.css">
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>  
@@ -22,7 +23,7 @@
                     <li><a href="#contact" class="hideOnMobile">Contact</a></li>
                     <li><a href="blog.html" class="hideOnMobile">Blog</a></li>
                 </div>
-                <li class="menu-icon"><a href="#" class="menu"><img src="images/menu.png" alt="Menu"></a></li>
+                <li><a href="#" id="menu"><img src="images/menu.png" alt="Menu"></a></li>
             </ul>    
         </nav>      
     </div> 
@@ -33,13 +34,13 @@
                 <li style="margin-bottom: 10px;"><a href="#product">Product</a></li>
                 <li style="margin-bottom: 10px;"><a href="#pricing">Pricing</a></li>
                 <li style="margin-bottom: 10px;"><a href="#contact">Contact</a></li>
-                <li><a href="blog.html" class="hideOnMobile">Blog</a></li>
+                <li style="margin-bottom: 10px;"><a href="blog.html">Blog</a></li>
             </ul>
         </nav>  
     </div>
     <script>//displays the menuBar when menu is pressed 
         document.addEventListener('DOMContentLoaded', function() {
-            const menuIcon = document.querySelector('.menu');
+            const menuIcon = document.getElementById('menu');
             const menuBar = document.getElementById('menuBar');
 
             menuIcon.addEventListener('click', function(event) {

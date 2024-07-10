@@ -58,10 +58,7 @@
     padding: 0;
     border: 0;
 }
-#pricingDiv{
-    width: 460px;
-    margin-left: 16px;
-}
+
 .outmostPricingDiv{
     width: 300px;
     border: 2px solid black; /* Set the border to black with 2px width */
@@ -69,7 +66,27 @@
     margin-left: 16px;
     height: 340px; 
 }
-
+#pricingOptions{
+    display: flex; 
+    margin-top: 10px;
+}
+#wholePricingDiv{
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+}
+@media (max-width: 1120px) {
+    #wholePricingDiv { 
+        display: block; /* make text and pricing div stacked*/
+    }
+}
+@media (max-width: 600px) {
+    #pricingOptions{
+        display: block; /* makes the twi pricinng divs stacked*/
+    }
+}
 .checkmark{
     height: 16px;
     width: auto;

@@ -58,7 +58,6 @@
     padding: 0;
     border: 0;
 }
-
 .outmostPricingDiv{
     width: 300px;
     border: 2px solid black; /* Set the border to black with 2px width */
@@ -81,8 +80,11 @@
     #wholePricingDiv { 
         display: block; /* make text and pricing div stacked*/
     }
+    #pricingOptions{
+        margin-top: 24px; /* makes the twi pricinng divs stacked*/
+    }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     #pricingOptions{
         display: block; /* makes the twi pricinng divs stacked*/
     }
@@ -176,7 +178,7 @@
 #integrations{
     padding-left: 10%;
     padding-right: 10%;
-    min-height: 55vh;
+    min-height: 45vh;
     background: rgb(187, 184, 214);
     display: block;
 }

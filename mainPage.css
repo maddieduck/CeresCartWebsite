@@ -65,10 +65,11 @@
 .outmostPricingDiv{
     width: 300px;
     border: 2px solid black; /* Set the border to black with 2px width */
-    border-radius: 10px; 
+    border-radius: 12px; 
     margin-left: 16px;
     height: 340px; 
 }
+
 .checkmark{
     height: 16px;
     width: auto;

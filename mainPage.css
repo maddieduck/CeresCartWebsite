@@ -81,7 +81,7 @@
 #wholePricingDiv{
     display: flex;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
     #wholePricingDiv { 
         display: block; /* make text and pricing div stacked*/
     }
@@ -97,9 +97,19 @@
 }
 @media (max-width: 650px) {
     #pricingOptions{
-        display: block; /* makes the twi pricinng divs stacked*/
         max-width: 0;
+        display: block; /* makes the twi pricinng divs stacked*/
+        align-items: center; /* Center vertically */
+        justify-content: center;
+        flex-direction: column; /* Stack items vertically */
     }
+    #pricing{
+        padding-right: 10%;
+    }
+    .outmostPricingDiv{
+        margin-top: 16px;
+    }
+
 }
 .checkmark{
     height: 16px;

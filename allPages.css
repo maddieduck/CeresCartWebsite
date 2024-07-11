@@ -18,9 +18,9 @@ nav a {
     transition: .3s;
     margin-left: 35px;
 }
-@media (max-width: 650px) {
-    .nav a {
-        margin-left: 0;
+@media (max-width: 600px) {
+    nav a {
+        margin-left: 0; /* Hide menu bar on larger screens */
     }
 }
 

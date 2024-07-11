@@ -111,7 +111,7 @@
                 const sectionHeight = productSection.scrollHeight;
                 const scrollPercentage = (scrollTop - sectionTop) / (sectionHeight - window.innerHeight);
                 const screenshotImage = document.getElementById('screenshot');
-                console.log('screen percent scroll', scrollPercentage)
+                //console.log('screen percent scroll', scrollPercentage)
                 if (scrollPercentage < 0.15) {
                     screenshotImage.src = '/images/Screenshot 1.png';
                 } else if (scrollPercentage < 0.2) {

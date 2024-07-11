@@ -62,12 +62,15 @@
     width: 300px;
     border: 2px solid black; /* Set the border to black with 2px width */
     border-radius: 12px; 
-    margin-left: 16px;
     height: 340px; 
 }
 #pricingOptions{
     display: flex; 
     margin-top: 10px;
+    min-width: 625px;
+    margin-top: 16px;
+    justify-content: space-between;
+    margin-left: 16px;
 }
 #wholePricingDiv{
     padding-left: 10%;
@@ -76,12 +79,17 @@
     padding-bottom: 5%;
     display: flex;
 }
-@media (max-width: 1120px) {
+@media (max-width: 1100px) {
     #wholePricingDiv { 
         display: block; /* make text and pricing div stacked*/
     }
     #pricingOptions{
         margin-top: 24px; /* makes the twi pricinng divs stacked*/
+        max-width: 625px;
+        margin-left: 0;
+    }
+    .outmostPricingDiv{
+        margin-left: 0px;
     }
 }
 @media (max-width: 650px) {

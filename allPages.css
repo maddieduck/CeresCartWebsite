@@ -21,6 +21,7 @@ nav a {
 @media (max-width: 600px) {
     nav a {
         margin-left: 0; /* Hide menu bar on larger screens */
+        margin-top: 8px;
     }
 }
 
@@ -76,7 +77,7 @@ header {
     z-index: 100;
 }
 #head{
-    padding-left: 30px;
+    padding-left: 25px;
     padding-right: 30px;
     display: flex;
     padding-top: 15px;

@@ -168,6 +168,12 @@
 #downloadButton:hover {
     background-color: #7c77b9;
   }
+#downloadButtonHyperlink{
+    display: inline-block; /* Allow anchor to size correctly */
+    height: 50px;
+    width: 320px;
+    text-decoration: none; /* Remove underline */
+}
 #contact{
     display: flex; 
     flex-direction: column; 
@@ -179,11 +185,6 @@
     height: auto; 
     margin-right: 16px;
     margin-left: 8px;
-}
-.hyperlink{
-    text-decoration: none; 
-    display: inline-block;
-    height: auto;
 }
 #userSurvey{
     color: rgb(0, 0, 0); 
@@ -246,7 +247,19 @@
     fill: rgb(187, 184, 214);
 }
 #pinterestImage{
-    height: 20px;
+    height: 100%; /* Ensure the image scales to fit the button */
+    width: auto;
 }
-
-
+#pinterestButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    padding: 0; /* Remove default padding from the button */
+    border: none; /* Remove default border from the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: transparent; /* Make background transparent */
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

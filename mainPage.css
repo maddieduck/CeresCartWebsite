@@ -208,14 +208,15 @@
     margin-top: 16px;
 }
 #integrations{
+    padding-top: 10%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5%;
     min-height: 45vh;
     background: rgb(187, 184, 214);
     display: block;
 }
 .integrationsHeader{
-    padding-top: 10%; 
     font-weight: 500;
     opacity: 0;
     transition: all 3s;

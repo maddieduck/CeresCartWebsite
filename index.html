@@ -170,13 +170,25 @@
         </div>
     </section>
     <section id="integrations"> 
-        <h2 id="integrationsHeader" class="fade-in-onscroll">Integrations</h2>  
-        <h4 id="integrationsBody" class="fade-in-onscroll">
+        <h2 class="integrationsHeader">Integrations</h2>  
+        <h4 class="integrationsBody">
             Presently, our app exclusively integrates with Kroger, ensuring seamless 
             grocery shopping experiences. Rest assured, we're diligently expanding our 
             partnerships to include more grocery stores in the near future.        
         </h4>  
-        <img id="krogerLogo" src="/images/Kroger Logo.svg" class="fade-in-onscroll-and-slide">
+        <img class="krogerLogo" src="/images/Kroger Logo.svg">
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    console.log('entry ', entry);
+                    if (entry.isIntersecting){ 
+                        entry.target.classList.add('fade-in-onscroll');
+                    }
+                })
+            });
+            const hiddenElements = document.querySelectorAll('.integrationsHeader, .integrationsBody, .krogerLogo'); 
+            hiddenElements.forEach((el) => observer.observe(el)); 
+        </script>
     </section>
     <div class="divider productAndIntegrationsDivider"> 
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

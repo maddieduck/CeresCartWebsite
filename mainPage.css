@@ -1,5 +1,5 @@
 #home{
-    min-height: 83vh;
+    min-height: 85vh;
 }
 .menu-image {
     width: 24px;
@@ -158,28 +158,6 @@
         opacity: 1; 
     }
 }
-.fade-in-onscroll{
-    animation: fadeInOnScroll 3s; 
-}
-@keyframes fadeInOnScroll {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1; 
-    }
-}
-.fade-in-onscroll-and-slide{
-    animation: fadeInOnScrollAndSlide 3s; 
-}
-@keyframes fadeInOnScrollAndSlide {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1; 
-    }
-}
 #downloadButton{
     color: white; 
     background-color: #000000;
@@ -236,21 +214,43 @@
     background: rgb(187, 184, 214);
     display: block;
 }
-#integrationsHeader{
+.integrationsHeader{
     padding-top: 10%; 
     font-weight: 500;
+    opacity: 0;
+    transition: all 3s;
 }
-#integrationsBody{
+.integrationsBody{
     padding-top: 24px; 
     width: 100%;
+    opacity: 0;
+    transition: all 3s;
 }
-.black-svg {
-    filter: invert(100%);
-}
-#krogerLogo{
+.krogerLogo{
     padding-top: 16px;
     height: 80px;
     align-items: center;
+    opacity: 0;
+    transition: all 3s;
+    transform: translateY(50%);
+}
+@media (prefers-reduced-motion) {
+    .integrationsHeader{
+        transition: none;
+    }
+    .integrationsBody{
+        transition: none;
+    }
+    .krogerLogo{
+        transition: none;
+    }
+}
+.fade-in-onscroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+.black-svg {
+    filter: invert(100%);
 }
 .divider{
     position: relative;

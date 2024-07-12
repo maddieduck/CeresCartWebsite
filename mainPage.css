@@ -1,5 +1,5 @@
 #home{
-    min-height: 90vh;
+    min-height: 83vh;
 }
 .menu-image {
     width: 24px;
@@ -107,7 +107,6 @@
     }
     .outmostPricingDiv{
         margin-top: 16px;
-
     }
 }
 .checkmark{
@@ -147,6 +146,39 @@
     flex-direction: column; 
     padding-left: 16px;
     width: 500px;
+}
+.fade-in {
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}
+.fade-in-onscroll{
+    animation: fadeInOnScroll 3s; 
+}
+@keyframes fadeInOnScroll {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}
+.fade-in-onscroll-and-slide{
+    animation: fadeInOnScrollAndSlide 3s; 
+}
+@keyframes fadeInOnScrollAndSlide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
 }
 #downloadButton{
     color: white; 
@@ -261,4 +293,5 @@
     background-color: transparent; /* Make background transparent */
     margin: 0;
 }
+
 

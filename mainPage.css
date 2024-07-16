@@ -58,17 +58,6 @@
     padding: 0;
     border: 0;
 }
-@media (max-width: 600px) {
-    #allProductText{
-        width: 100%;
-        margin-right: 16px;
-        margin-left: 16px;
-    }
-
-    #product{
-        width: 100%;
-    }
-}
 .outmostPricingDiv{
     width: 300px;
     border: 2px solid black; /* Set the border to black with 2px width */
@@ -306,6 +295,3 @@
     background-color: transparent; /* Make background transparent */
     margin: 0;
 }
-
-
-

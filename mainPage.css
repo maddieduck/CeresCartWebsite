@@ -208,7 +208,7 @@
     margin-top: 16px;
 }
 #integrations{
-    padding-top: 10%;
+    padding-top: 8%;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
@@ -246,6 +246,7 @@
         transition: none;
     }
 }
+
 .fade-in-onscroll{
     opacity: 1;
     transform: translateY(0);

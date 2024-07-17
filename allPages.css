@@ -106,6 +106,9 @@ header {
     .hideOnMobile { 
         display: none;
     }
+    .displayOnMobile {
+        display: flex;
+    }
     #menu {
         display: flex; 
     }

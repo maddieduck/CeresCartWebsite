@@ -72,8 +72,8 @@
     margin-top: 32px;
     margin-bottom: 32px;
 
-    transition: all 3s;
-    transform: rotate(10deg); /* Rotate the element 90 degrees counterclockwise */
+    transition: all 2s;
+    transform: rotate(8deg); /* Rotate the element 90 degrees counterclockwise */
 }
 @media (prefers-reduced-motion) {
     .mobileScreenshots{

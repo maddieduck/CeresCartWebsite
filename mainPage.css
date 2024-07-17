@@ -36,6 +36,9 @@
     #allProductText {
         margin-right: 0px;
     }
+    #allProductText{
+        width: 80%;
+    }
 }
 .productText {
     min-height: 80vh;

@@ -48,7 +48,7 @@ function handleScrollAndResize() {
     const sectionTop = productSection.offsetTop;
     const sectionHeight = productSection.scrollHeight;
     const scrollPercentage = (scrollTop - sectionTop) / (sectionHeight - window.innerHeight);
-    const screenshotImage = document.getElementById('screenshot');
+    const screenshotImage = document.getElementById('mainScreenshot');
     //console.log('screen percent scroll', scrollPercentage)
     if (scrollPercentage < 0.15) {
         screenshotImage.src = '/images/Screenshot 1.png';

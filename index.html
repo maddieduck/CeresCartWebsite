@@ -114,6 +114,18 @@
                 <img src="/images/Screenshot 8.png" alt="Sticky Image" class="mobileScreenshots displayOnMobile">
             </div>
         </div>
+        <script>
+            const mobileScreenshotObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    console.log('entry ', entry);
+                    if (entry.isIntersecting){ 
+                        entry.target.classList.add('fade-in-onscroll');
+                    }
+                })
+            });
+            const mboileScreenshots = document.querySelectorAll('.mobileScreenshots'); 
+            mboileScreenshots.forEach((el) => mobileScreenshotObserver.observe(el)); 
+        </script>
     </section>
     <section id="integrations"> 
         <h2 class="integrationsHeader">Integrations</h2>  

@@ -71,6 +71,14 @@
     display: none;
     margin-top: 32px;
     margin-bottom: 32px;
+
+    transition: all 3s;
+    transform: rotate(10deg); /* Rotate the element 90 degrees counterclockwise */
+}
+@media (prefers-reduced-motion) {
+    .mobileScreenshots{
+        transition: none;
+    }
 }
 .outmostPricingDiv{
     width: 300px;
@@ -263,7 +271,6 @@
         transition: none;
     }
 }
-
 .fade-in-onscroll{
     opacity: 1;
     transform: translateY(0);

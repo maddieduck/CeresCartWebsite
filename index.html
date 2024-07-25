@@ -130,13 +130,13 @@
     <section id="integrations"> 
         <h2 class="integrationsHeader">Integrations</h2>  
         <h4 class="integrationsBody">
-            Presently, our AI-powered app exclusively integrates with Kroger, ensuring 
+            Presently, our AI-powered app exclusively integrates with Kroger and Walmart, ensuring 
             seamless grocery shopping experiences. Rest assured, we're diligently 
             expanding our partnerships to include more grocery stores in the near future.      
         </h4>  
         <!-- <img class="krogerLogo" src="/images/ai.png"> -->
         <img class="krogerLogo" src="/images/Kroger Logo.svg">
-        <!-- <img class="krogerLogo" src="/images/Walmart Logo.png">  -->
+        <img class="krogerLogo" src="/images/Walmart Logo.png">
         <script>
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
@@ -159,12 +159,15 @@
         <div id="wholePricingDiv">   
             <div id="pricingDiv">   
                 <h2 style="font-weight: 500;">Pricing Options</h2>  
-                <h4 style="padding-top: 16px;">Our extension offers flexible pricing options to suit every user's needs. 
-                    With our free tier, users can enjoy the app's features at no cost, 
-                    including the ability to export up to three recipes. For those who 
-                    require more, we offer a premium subscription at just $0.99 a month, 
-                    unlocking unlimited recipe exports. With transparent and straightforward pricing, 
-                    our goal is to provide accessible and valuable services, ensuring that everyone can enjoy the benefits of our app.
+                <h4 style="padding-top: 16px;">Our Chrome extension is completely free to use! 
+                    We are continuously working to enhance its functionality and add new features 
+                    that will make your browsing experience even better. In the future, some of 
+                    these additional features may be offered as paid upgrades.
+
+                    We value your input and would love to hear your ideas for new features. 
+                    If you have any suggestions or feedback, please let us know by submitting 
+                    the form at the bottom of the page. Your contributions will help us shape the 
+                    future of our extension to better meet your needs. Thank you for your support!
                 </h4> 
             </div> 
             <div id="pricingOptions">
@@ -191,7 +194,8 @@
                         </div>   
                     </div>
                 </div> 
-                <div class="outmostPricingDiv">
+                <!-- Make display not 'none' when you want to add more pricing options-->
+                <div style="display: none;" class="outmostPricingDiv">
                     <div class="blackDiv">  
                         <h3>Primo</h3>
                         <div style="display: flex;">

@@ -88,7 +88,6 @@
 }
 #pricingOptions{
     display: flex; 
-    margin-top: 10px;
     margin-top: 16px;
     justify-content: space-between; 
     margin-left: 16px;        
@@ -103,11 +102,19 @@
     display: flex;
 }
 @media (max-width: 1150px) {
+    .outmostPricingDiv{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 750px) {
     #wholePricingDiv { 
         display: block; /* make text and pricing div stacked*/
     }
-    .outmostPricingDiv{
-        margin-left: 0px;
+    #pricingOptions{
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
     }
 }
 @media (max-width: 650px) {

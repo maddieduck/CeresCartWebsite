@@ -73,7 +73,7 @@
     margin-bottom: 32px;
 
     transition: all 2s;
-    transform: rotate(8deg); /* Rotate the element 90 degrees counterclockwise */
+    transform: rotate(4deg); /* Rotate the element 90 degrees counterclockwise */
 }
 @media (prefers-reduced-motion) {
     .mobileScreenshots{
@@ -89,9 +89,8 @@
 #pricingOptions{
     display: flex; 
     margin-top: 10px;
-    min-width: 625px;
     margin-top: 16px;
-    justify-content: space-between;
+    justify-content: space-between; 
     margin-left: 16px;        
 }
 #pricing{
@@ -107,23 +106,11 @@
     #wholePricingDiv { 
         display: block; /* make text and pricing div stacked*/
     }
-    #pricingOptions{
-        margin-top: 24px; /* makes the twi pricinng divs stacked*/
-        min-width: 0px;
-        max-width: 625px;
-        margin-left: 0px;        
-    }
     .outmostPricingDiv{
         margin-left: 0px;
     }
 }
 @media (max-width: 650px) {
-    #pricingOptions{
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center horizontally */
-        justify-content: center; /* Center vertically */
-    }
     #pricing{
         padding-right: 10%;
     }
@@ -257,7 +244,15 @@
     height: 80px;
     align-items: center;
     opacity: 0;
-    transition: all 3s;
+    transition: all 2s;
+    transform: translateY(50%);
+}
+.walmartLogo{
+    padding-top: 16px;
+    height: 80px;
+    align-items: center;
+    opacity: 0;
+    transition: all 4s;
     transform: translateY(50%);
 }
 @media (prefers-reduced-motion) {
@@ -268,6 +263,9 @@
         transition: none;
     }
     .krogerLogo{
+        transition: none;
+    }
+    .walmartLogo{
         transition: none;
     }
 }

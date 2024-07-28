@@ -16,7 +16,6 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     transition: .3s;
-    margin-left: 35px;
 }
 @media (max-width: 600px) {
     nav a {

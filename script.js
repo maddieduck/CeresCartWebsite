@@ -14,6 +14,14 @@ window.onscroll = () => {
         };
     });
 };
+function supportsWebP(callback) {
+    var webP = new Image();
+    webP.onload = webP.onerror = function () {
+        callback(webP.height === 2);
+    };
+    webP.src = "data:image/webp;base64,UklGRh4AAABXRUJQVlA4WAoAAAAQAAAAFAAAQUxQSCgAAAAQU0lFAAABAAEAAEwEQAA3AA/vvYPAAAAA==";
+}
+
 function handleScrollAndResize() {
     var productSection = document.getElementById('product');
     var desktopImage = document.querySelector('.desktopImage');
@@ -24,22 +32,23 @@ function handleScrollAndResize() {
     var desktopImageRect = desktopImage.getBoundingClientRect();
 
     // Check if the section is in the viewport
-    if (rect.top > 0 ) { //above the product section
-        desktopImage.style.position = 'absolute'; 
-        desktopImage.style.top = '50vh'; 
-        desktopImage.style.transform = 'translateY(-50%)'; 
-        desktopImage.style.bottom = ''; 
-    }else if(rect.bottom < window.innerHeight){ //below the product section
-        desktopImage.style.position = 'absolute'; 
-        desktopImage.style.bottom = '50vh'; 
-        desktopImage.style.top =  ''; 
-        desktopImage.style.transform = 'translateY(50%)'; 
-    } else { //in the product section 
-        desktopImage.style.position = 'fixed'; 
-        desktopImage.style.top = '50%'; 
-        desktopImage.style.transform = 'translateY(-50%)'; 
-        desktopImage.style.bottom = ''; 
+    if (rect.top > 0) { // above the product section
+        desktopImage.style.position = 'absolute';
+        desktopImage.style.top = '50vh';
+        desktopImage.style.transform = 'translateY(-50%)';
+        desktopImage.style.bottom = '';
+    } else if (rect.bottom < window.innerHeight) { // below the product section
+        desktopImage.style.position = 'absolute';
+        desktopImage.style.bottom = '50vh';
+        desktopImage.style.top = '';
+        desktopImage.style.transform = 'translateY(50%)';
+    } else { // in the product section
+        desktopImage.style.position = 'fixed';
+        desktopImage.style.top = '50%';
+        desktopImage.style.transform = 'translateY(-50%)';
+        desktopImage.style.bottom = '';
     }
+
     var offset = desktopImageRect.height * 0.1;
     screenshot.style.top = (desktopImageRect.top + offset) + 'px';
 
@@ -49,27 +58,31 @@ function handleScrollAndResize() {
     const sectionHeight = productSection.scrollHeight;
     const scrollPercentage = (scrollTop - sectionTop) / (sectionHeight - window.innerHeight);
     const screenshotImage = document.getElementById('mainScreenshot');
-    //console.log('screen percent scroll', scrollPercentage)
-    if (scrollPercentage < 0.15) {
-        screenshotImage.src = '/images/Screenshot 1.png';
-    } else if (scrollPercentage < 0.2) {
-        screenshotImage.src = '/images/Screenshot 2.png';
-    } else if (scrollPercentage < 0.3) {
-        screenshotImage.src = '/images/Screenshot 3.png';
-    } else if (scrollPercentage < 0.5) {
-        screenshotImage.src = '/images/Screenshot 4.png';
-    } else if (scrollPercentage < 0.55) {
-        screenshotImage.src = '/images/Screenshot 5.png';
-    } else if (scrollPercentage < 0.6) {
-        screenshotImage.src = '/images/Screenshot 6.png';
-    } else if (scrollPercentage < 0.7) {
-        screenshotImage.src = '/images/Screenshot 7.png';
-    } else if (scrollPercentage < 0.8) {
-        screenshotImage.src = '/images/Screenshot 8.png';
-    } else if (scrollPercentage < 0.95) {
-        screenshotImage.src = '/images/Screenshot 9.png';
-    }   
+
+    supportsWebP(function(support) {
+        const extension = support ? 'webp' : 'png';
+        if (scrollPercentage < 0.15) {
+            screenshotImage.src = `/images/screenshots/Screenshot 1.${extension}`;
+        } else if (scrollPercentage < 0.2) {
+            screenshotImage.src = `/images/screenshots/Screenshot 2.${extension}`;
+        } else if (scrollPercentage < 0.3) {
+            screenshotImage.src = `/images/screenshots/Screenshot 3.${extension}`;
+        } else if (scrollPercentage < 0.5) {
+            screenshotImage.src = `/images/screenshots/Screenshot 4.${extension}`;
+        } else if (scrollPercentage < 0.55) {
+            screenshotImage.src = `/images/screenshots/Screenshot 5.${extension}`;
+        } else if (scrollPercentage < 0.6) {
+            screenshotImage.src = `/images/screenshots/Screenshot 6.${extension}`;
+        } else if (scrollPercentage < 0.7) {
+            screenshotImage.src = `/images/screenshots/Screenshot 7.${extension}`;
+        } else if (scrollPercentage < 0.8) {
+            screenshotImage.src = `/images/screenshots/Screenshot 8.${extension}`;
+        } else if (scrollPercentage < 0.95) {
+            screenshotImage.src = `/images/screenshots/Screenshot 9.${extension}`;
+        }
+    });
 }
+
 
 // Add event listeners for scroll and resize
 document.addEventListener('scroll', handleScrollAndResize);

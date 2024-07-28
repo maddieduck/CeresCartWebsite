@@ -111,6 +111,9 @@ header {
     #menu {
         display: flex; 
     }
+    #menuUl{
+        justify-content: flex-end;
+    }
 }
 @media (min-width: 601px) {
     #menuBar {

@@ -105,52 +105,36 @@
             <picture>
                 <source srcset="/images/screenshots/Screenshot 1.webp" type="image/webp">
                 <img id="mainScreenshot" src="/images/screenshots/Screenshot 1.png" alt="Screenshot of Extension" class="screenshot">
-              </picture>              
+            </picture>              
         </div>
         <div id="allProductText">
             <div class="productText">
-                <div class="largerProductText">
-                    Auto-Detects Recipes
-                </div>
-                <div class="smallerProductText">
-                    Automatically shows up when a user views a recipe on their Desktop
-                </div>  
+                <div class="largerProductText">Auto-Detects Recipes</div>
+                <div class="smallerProductText">Automatically shows up when a user views a recipe on their Desktop</div>
                 <picture>
                     <source srcset="/images/screenshots/Screenshot 1.webp" type="image/webp">
                     <img src="/images/screenshots/Screenshot 1.png" alt="Screenshot 1 of Extension" class="mobileScreenshots displayOnMobile">
-                  </picture>
+                </picture>
             </div>
             <div class="productText">
-                <div class="largerProductText">
-                    Shop Nearby
-                </div>
-                <div class="smallerProductText">
-                    Input a zip code. Once a store is selected, accurate pricing for items becomes available.
-                </div>  
+                <div class="largerProductText">Shop Nearby</div>
+                <div class="smallerProductText">Input a zip code. Once a store is selected, accurate pricing for items becomes available.</div>
                 <picture>
                     <source srcset="/images/screenshots/Screenshot 3.webp" type="image/webp">
                     <img src="/images/screenshots/Screenshot 3.png" alt="Screenshot 2 of Extension" class="mobileScreenshots displayOnMobile">
-                  </picture> 
-           </div>
+                </picture>
+            </div>
             <div class="productText">
-                <div class="largerProductText">
-                    Select Items
-                </div>
-                <div class="smallerProductText">
-                    Press arrows to pan through ingredients. Add ingredients with the +.
-                </div>  
+                <div class="largerProductText">Select Items</div>
+                <div class="smallerProductText">Press arrows to pan through ingredients. Add ingredients with the +.</div>
                 <picture>
                     <source srcset="/images/screenshots/Screenshot 6.webp" type="image/webp">
                     <img src="/images/screenshots/Screenshot 6.png" alt="Screenshot 3 of Extension" class="mobileScreenshots displayOnMobile">
                 </picture>
             </div>
             <div class="productText">
-                <div class="largerProductText">
-                    Add Items 
-                </div>
-                <div class="smallerProductText">
-                    Adding items adds items directly to your online cart. 
-                </div>  
+                <div class="largerProductText">Add Items</div>
+                <div class="smallerProductText">Adding items adds items directly to your online cart.</div>
                 <picture>
                     <source srcset="/images/screenshots/Screenshot 8.webp" type="image/webp">
                     <img src="/images/screenshots/Screenshot 8.png" alt="Screenshot 4 of Extension" class="mobileScreenshots displayOnMobile">
@@ -160,16 +144,16 @@
         <script>
             const mobileScreenshotObserver = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
-                    console.log('entry ', entry);
-                    if (entry.isIntersecting){ 
+                    if (entry.isIntersecting) {
                         entry.target.classList.add('fade-in-onscroll');
                     }
-                })
+                });
             });
-            const mboileScreenshots = document.querySelectorAll('.mobileScreenshots'); 
-            mboileScreenshots.forEach((el) => mobileScreenshotObserver.observe(el)); 
+            const mobileScreenshots = document.querySelectorAll('.mobileScreenshots');
+            mobileScreenshots.forEach((el) => mobileScreenshotObserver.observe(el));
         </script>
     </section>
+    
     <section id="integrations"> 
         <h2 class="integrationsHeader">Integrations</h2>  
         <h4 class="integrationsBody">

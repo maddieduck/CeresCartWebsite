@@ -207,6 +207,10 @@
     flex-direction: column; 
     background: rgb(255, 225, 105);
     min-height: 30vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .chromeLogoInButton {
     width: 32px; 
@@ -214,10 +218,11 @@
     margin-right: 16px;
     margin-left: 8px;
 }
-#userSurvey{
-    color: rgb(0, 0, 0); 
+#userSurvey {
+    color: rgb(0, 0, 0);
     font-weight: 200;
     font-size: 15%;
+    margin: 8px 0; /* Added margin for spacing */
 }
 #privacyPolicy{
     color: rgb(0, 0, 0); 
@@ -225,6 +230,8 @@
     font-size: 15%;
     font-weight: 500;
     margin-top: 16px;
+    display: block; /* Ensure the privacy policy link is a block element */
+    margin: 8px 0; /* Added margin for spacing */
 }
 #integrations{
     padding-top: 8%;
@@ -315,11 +322,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
-    padding: 0; /* Remove default padding from the button */
-    border: none; /* Remove default border from the button */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    background-color: transparent; /* Make background transparent */
-    margin: 0;
+    height: 48px; /* Increased height */
+    width: 48px; /* Increased width */
+    padding: 8px; /* Added padding for better touch target size */
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 8px; /* Added margin for spacing */
 }

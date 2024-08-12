@@ -75,10 +75,12 @@ function handleScrollAndResize() {
             screenshotImage.src = `/images/screenshots/Screenshot 6.${extension}`;
         } else if (scrollPercentage < 0.7) {
             screenshotImage.src = `/images/screenshots/Screenshot 7.${extension}`;
-        } else if (scrollPercentage < 0.8) {
+        } else if (scrollPercentage < 0.82) {
             screenshotImage.src = `/images/screenshots/Screenshot 8.${extension}`;
-        } else if (scrollPercentage < 0.95) {
+        } else if (scrollPercentage < 0.92) {
             screenshotImage.src = `/images/screenshots/Screenshot 9.${extension}`;
+        } else if (scrollPercentage < 0.96) {
+            screenshotImage.src = `/images/screenshots/Screenshot 10.${extension}`;
         }
     });
 }

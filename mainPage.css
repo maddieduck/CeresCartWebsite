@@ -11,7 +11,7 @@
     overflow: hidden;
     position: relative;
     overflow-y: auto; 
-    display: flex;
+    display: none; /*flex;*/
 }
 #productImages{
     width: 50%; /* 50% of the width for images */

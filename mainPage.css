@@ -110,6 +110,9 @@
     #wholePricingDiv { 
         display: block; /* make text and pricing div stacked*/
     }
+    #home{
+        display: block; /* make text and pricing div stacked*/
+    }
     #pricingOptions{
         display: flex;
         flex-direction: column; /* Stack items vertically */
@@ -165,6 +168,7 @@
     flex-direction: column; 
     padding-left: 16px;
     width: 500px;
+    margin: 32px;
 }
 .fade-in {
     animation: fadeIn 4.5s;

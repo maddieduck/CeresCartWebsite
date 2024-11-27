@@ -69,12 +69,10 @@
             </ul>
         </nav>
     </div>
-    
     <script>//displays the menuBar when menu is pressed 
         document.addEventListener('DOMContentLoaded', function() {
             const menuIcon = document.getElementById('menu');
             const menuBar = document.getElementById('menuBar');
-
             menuIcon.addEventListener('click', function(event) {
                 event.preventDefault();
                 if (menuBar.style.display === 'none' || menuBar.style.display === '') {

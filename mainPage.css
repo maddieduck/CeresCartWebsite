@@ -259,7 +259,7 @@
 }
 .homeAndProductDivider{
     fill: #ffffff;
-    background-color: #f5f5f5;
+    background-color: rgb(187, 184, 214);
 }
 .productAndIntegrationsDivider{
     transform: scaleX(-1); 

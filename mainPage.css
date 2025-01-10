@@ -177,6 +177,7 @@
     line-height: 0;
     top: 0px;
     background-color: #f5f5f5;
+    text-align: center; 
 }
 .divider svg {
     position: relative;
@@ -226,3 +227,19 @@
     border: none; /* Removes default iframe border */
 }
 
+.learnMoreContainer {
+    display: flex;
+    flex-direction: column; /* Stack "learn more" and arrow vertically */
+    align-items: center; /* Center horizontally */
+    transform: translateY(-50%); /* Move container upwards by 50% of its height */
+}
+
+.learnMore {
+    margin-bottom: 10px; /* Space between "learn more" and the arrow */
+    color: #979797; /* Grey text */
+}
+
+.downArrow {
+    width: 30px; /* Adjust the arrow size */
+    height: auto;
+}

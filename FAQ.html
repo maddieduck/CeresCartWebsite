@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - Ceres Cart</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("headerContainer").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading header:", error));
+        });
+    </script>
+    <link rel="stylesheet" href="allPages.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -77,16 +88,13 @@
     </style>
 </head>
 <body>
-    <header>
+    <div id="headerContainer"></div>
         <h1>Frequently Asked Questions</h1>
-    </header>
-
     <div class="container">
         <div class="faq">
             <h2>How does Ceres Cart work?</h2>
             <p>Ceres Cart is a Chrome extension that enhances your recipe browsing experience. It automatically pops up when you view a recipe, helping you shop for ingredients with ease. Whether you're looking for budget-friendly meals or accommodating dietary needs like vegan or gluten-free options, Ceres Cart simplifies the process. Eat healthier by making shopping simpler!</p>
         </div>
-
         <div class="faq">
             <h2>Can Ceres Cart bypass paywalls on recipe sites?</h2>
             <p>Yes, Ceres Cart can bypass paywalls on select recipe websites, including:</p>

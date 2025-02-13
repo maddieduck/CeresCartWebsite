@@ -93,6 +93,35 @@
     </style>
 </head>
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("headerContainer").innerHTML = data;
+    
+                    // Now that the header is loaded, attach event listeners
+                    const menuIcon = document.getElementById("menu");
+                    const menuBar = document.getElementById("menuBar");
+    
+                    if (menuIcon && menuBar) {
+                        menuIcon.addEventListener("click", function (event) {
+                            console.log("menu clicked again");
+    
+                            event.preventDefault();
+                            if (menuBar.style.display === "none" || menuBar.style.display === "") {
+                                menuBar.style.display = "block";
+                            } else {
+                                menuBar.style.display = "none";
+                            }
+                        });
+                    } else {
+                        console.error("Menu or MenuBar not found");
+                    }
+                })
+                .catch(error => console.error("Error loading header:", error));
+        });
+    </script>
     <div id="headerContainer"></div>
     <h1 id="FAQ">Frequently Asked Questions</h1>
     <div class="container">

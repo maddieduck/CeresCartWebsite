@@ -37,7 +37,44 @@
     </script>
 </head> 
 <body>  
-    <div id="headerContainer"></div>
+    <div id="head">
+        <div id="headerLogo">
+            <img id="ceresCartLogo" src="images/Ceres Cart Logo.png" alt="Ceres Cart Logo">
+            <a href="#" id="name" style="white-space: nowrap;">Ceres Cart</a>
+        </div>
+        <nav style="display: flex; align-items: center; width: 100%; margin-left: 16px;">
+            <ul id="menuUl" style="list-style: none; display: flex; width: 100%; padding: 0;">
+                <li style="display: flex; padding: 0 20px;">
+                    <a href="#home" class="active hideOnMobile">Home</a>
+                </li>
+                <li style="display: flex; padding: 0 20px;">
+                    <a href="#pricing" class="hideOnMobile">Pricing</a>
+                </li>
+                <li style="display: flex; padding: 0 20px;">
+                    <a href="#contact" class="hideOnMobile">Contact</a>
+                </li>
+                <!-- 
+                <li style="display: flex; padding: 0 20px;">
+                    <a href="blog.html" class="hideOnMobile">Blog</a>
+                </li>
+                 -->
+                <li>
+                    <a href="#" id="menu"><img src="images/menu.png" alt="Menu"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBar" style="display: none;">
+        <nav style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 16px;">
+            <ul style="list-style: none; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0; margin: 0;">
+                <li style="margin-bottom: 10px;"><a href="#home">Home</a></li>
+                <li style="margin-bottom: 10px;"><a href="#pricing">Pricing</a></li>
+                <li style="margin-bottom: 10px;"><a href="#contact">Contact</a></li>
+                <!--        <li style="margin-bottom: 10px;"><a href="blog.html">Blog</a></li>
+                -->
+            </ul>
+        </nav>
+    </div>
     <script>//displays the menuBar when menu is pressed 
         document.addEventListener('DOMContentLoaded', function() {
             const menuIcon = document.getElementById('menu');
@@ -53,32 +90,16 @@
         });
     </script>
     <section id="home">   
-        <div id="homeText"> 
-            <h1 style="align-self: flex-start;" class="fade-in">Browse.</h1> 
-            <h1 style="align-self: flex-start;" class="fade-in">Shop. Checkout. </h1> 
-            <h3 style="align-self: flex-start;" class="fade-in">Ceres Cart is an Ad-Free Recipe Viewer that lets you shop groceries from recipes at your local grocery store 
-            </h3>     
-            <a href="https://chromewebstore.google.com/detail/ceres-cart/nckacfgoolkhaedphbknecabckccgffe" target="_blank" id="downloadButtonHyperlink">
-                <button id="downloadButton" class="fade-in"> <img src="images/chrome logo.png" alt="chrome image" class="chromeLogoInButton" alt="Chrome Logo"> 
-                    Install from Chrome Web Store
-                </button>
-            </a> 
-        </div>  
-        <div>
-            <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/KnG4iBsw604" 
-                frameborder="0" 
-                allowfullscreen>
-            </iframe>
-        </div>
     </section>
     <div class="divider homeAndProductDivider">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z" class="shape-fill"></path>
-        </svg> 
-    </div>
+        </svg>
+        <div class="learnMoreContainer">
+            <p class="learnMore">Learn more</p>
+            <img src="/images/downArrow.png" alt="Arrow" class="downArrow">
+        </div> 
+    </div>      
     <section id="integrations"> 
         <h2 class="integrationsHeader">Integrations</h2>  
         <h4 class="integrationsBody">
@@ -106,70 +127,28 @@
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z" class="shape-fill"></path>
         </svg> 
-    </div> 
-    <section id="pricing">
-        <div id="wholePricingDiv">   
-            <div>   
-                <h2 style="font-weight: 500;">Pricing Options</h2>  
-                <h4 style="padding-top: 16px;">Our Chrome extension is completely free to use! 
-                    We are continuously working to enhance its functionality and add new features 
-                    that will make your browsing experience even better. In the future, some of 
-                    these additional features may be offered as paid upgrades.
-
-                    We value your input and would love to hear your ideas for new features. 
-                    If you have any suggestions or feedback, please let us know by submitting 
-                    the form at the bottom of the page. Your contributions will help us shape the 
-                    future of our extension to better meet your needs. Thank you for your support!
-                </h4> 
-            </div> 
-            <div id="pricingOptions">
-                <div class="outmostPricingDiv">
-                    <div class="blackDiv">  
-                        <h3>Free!</h3>
-                        <div style="display: flex;">
-                            <h5>US$</h5> 
-                            <h2>0</h2> 
-                        </div>
-                    </div>
-                    <div class="pinkDiv"> 
-                        <div class="benefit">
-                            <img class="checkmark" src="images/checkmark.png" alt="Checkmark 1">
-                            <h6>Recipe Viewer</h6>
-                        </div>
-                        <div class="benefit">
-                            <img class="checkmark" src="images/checkmark.png" alt="Checkmark 2">
-                            <h6>Real Time Pricing</h6>
-                        </div>
-                        <div class="benefit"> 
-                            <img class="checkmark" src="images/checkmark.png" alt="Checkmark 3">
-                            <h6>Add ingredients to online cart</h6>
-                        </div>   
-                    </div>
-                </div> 
-                <!-- Uncomment when you want to add more pricing options
-                <div style="display: none;" class="outmostPricingDiv">
-                    <div class="blackDiv">  
-                        <h3>Primo</h3>
-                        <div style="display: flex;">
-                            <h5>US$</h5> 
-                            <h2>0.99</h2> 
-                        </div>
-                        <h4>Every Month</h4> 
-                        <h4>Cancel Whenever</h4> 
-                    </div>
-                    <div class="greenDiv">
-                        <div class="benefit"> 
-                            <img class="checkmark" src="images/checkmark.png">
-                            <h6>Everything in Free!</h6>
-                        </div>    
-                        <div class="benefit">
-                            <img class="checkmark" src="images/checkmark.png">
-                            <h6>Plus unlimited exports!</h6>
-                        </div>
-                    </div>
-                </div>
-                -->
-            </div>
+    </div>
+    <section id="extension"> 
+        <div id="homeText"> 
+            <h1 style="align-self: flex-start;" class="fade-in">Browse.</h1> 
+            <h1 style="align-self: flex-start;" class="fade-in">Shop. Checkout. </h1> 
+            <h3 style="align-self: flex-start;" class="fade-in">Ceres Cart offers a browser extension with an ad-free recipe 
+                viewer that lets you shop for groceries directly from recipes at your local store.
+            </h3> 
+            <a href="https://chromewebstore.google.com/detail/ceres-cart/nckacfgoolkhaedphbknecabckccgffe" target="_blank" id="downloadButtonHyperlink">
+                <button id="downloadButton" class="fade-in"> <img src="images/chrome logo.png" alt="chrome image" class="chromeLogoInButton" alt="Chrome Logo"> 
+                    Install from Chrome Web Store
+                </button> 
+            </a> 
+        </div>    
+        <div class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/KnG4iBsw604?modestbranding=1&rel=0&showinfo=0" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
         </div>
     </section>
     <section id="contact">

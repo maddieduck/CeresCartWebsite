@@ -1,6 +1,79 @@
-#home{
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     min-height: 85vh;
+    padding: 0 10%;
 }
+
+.text-content p {
+    font-size: 2rem; /* Adjust size as needed */
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.90);
+}
+#shopForTheIngredients{
+    font-size: 2rem; /* Adjust size as needed */
+    color: #666;
+    margin-bottom: 20px;
+}
+.text-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.url-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+input::placeholder {
+    color: #ccc;
+    opacity: 1; 
+}
+
+button {
+    background-color: rgb(230, 57, 70); 
+    color: white;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(210, 40, 65);
+}
+
+.image-container {
+    position: relative;
+    max-width: 350px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 .menu-image {
     width: 24px;
     height: 24px; 
@@ -37,7 +110,7 @@
         padding-top: 32px;
     }
 }
-#homeText{
+#extensionText{
     display: flex; 
     flex-direction: column; 
     padding-left: 16px;

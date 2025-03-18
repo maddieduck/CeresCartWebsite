@@ -57,27 +57,17 @@
                 .catch(error => console.error("Error loading header:", error));
         });
     </script>
-    <section id="home">   
-        <div id="homeText"> 
-            <h1 style="align-self: flex-start;">Browse.</h1> 
-            <h1 style="align-self: flex-start;">Shop. Checkout. </h1> 
-            <h3 style="align-self: flex-start;">Ceres Cart offers a browser extension with an ad-free recipe 
-                viewer that lets you shop for groceries directly from recipes at your local store.
-            </h3> 
-            <a href="https://chromewebstore.google.com/detail/ceres-cart/nckacfgoolkhaedphbknecabckccgffe" target="_blank" id="downloadButtonHyperlink">
-                <button id="downloadButton" class="fade-in"> <img src="images/chrome logo.png" alt="chrome image" class="chromeLogoInButton" alt="Chrome Logo"> 
-                    Install from Chrome Web Store
-                </button> 
-            </a> 
-        </div>    
-        <div class="video-container">
-            <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/KnG4iBsw604?modestbranding=1&rel=0&showinfo=0" 
-                frameborder="0" 
-                allowfullscreen>
-            </iframe>
+    <section id="home">
+        <div class="text-content">
+            <h1>Clear away the clutter on any recipe site.</h1>
+            <h2 id="shopForTheIngredients">Then shop for the ingredients.</h2>
+            <div class="url-input-container">
+                <input type="text" placeholder="Paste Recipe URL">
+                <button>Get recipe</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/Ceres Cart Logo.png" alt="Recipe App Mockup">
         </div>
     </section>
     <div class="divider homeAndProductDivider">
@@ -119,7 +109,7 @@
         </svg> 
     </div>
     <section id="extension"> 
-        <div id="homeText"> 
+        <div id="extensionText"> 
             <h1 style="align-self: flex-start;">Browse.</h1> 
             <h1 style="align-self: flex-start;">Shop. Checkout. </h1> 
             <h3 style="align-self: flex-start;">Ceres Cart offers a browser extension with an ad-free recipe 

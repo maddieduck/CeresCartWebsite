@@ -118,7 +118,7 @@ button:hover {
     margin: 32px;
 }
 .fade-in {
-    animation: fadeIn 4.5s;
+    animation: fadeIn 3s;
 }
 @keyframes fadeIn {
     from {
@@ -262,6 +262,9 @@ button:hover {
     display: block;
     width: calc(165% + 1.3px);
     height: 45px;
+    width: 100%;
+
+
 }
 .homeAndProductDivider{
     fill: #ffffff;

@@ -118,7 +118,7 @@ button:hover {
     margin: 32px;
 }
 .fade-in {
-    animation: fadeIn 3s;
+    animation: fadeIn 2.5s;
 }
 @keyframes fadeIn {
     from {

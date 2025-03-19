@@ -120,9 +120,7 @@ header {
         display: none !important; /* Hide menu bar on larger screens */
     }
 }
-nav a.active {
-    color: #6dab9b;
-}
+
 nav a.hover {
     color: #6dab9b;
 }

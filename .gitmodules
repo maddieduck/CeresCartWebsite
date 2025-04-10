@@ -1,3 +1,5 @@
 [submodule "ReuseCode"]
-	path = ReuseCode
+	path = src/ReuseCode
 	url = https://github.com/maddieduck/ReuseCode
+[submodule "old-submodule-directory"]
+	path = new-submodule-directory

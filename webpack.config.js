@@ -33,8 +33,8 @@ module.exports = {
         patterns: [
             { from: './src/ReuseCode/images', to: 'images' },
             //{ from: './html', to: 'html' },
-            { from: './src', to: 'src', globOptions: { ignore: ['**/*.js', '**/*.jsx'] } } // Exclude compiled files
-          //{ from: './styles.css', to: 'styles.css' }, // Only copy, no minification
+            { from: './src', to: 'src', globOptions: { ignore: ['**/*.js', '**/*.jsx'] } }, // Exclude compiled files
+            //{ from: './src/css*', to: 'styles.css' }, // Only copy, no minification
         ],
       }),
   ],

@@ -124,3 +124,21 @@ header {
 nav a.hover {
     color: #6dab9b;
 }
+.button-link {
+    display: inline-flex; /* better alignment than inline-block */
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.get-recipe-button {
+    padding: 16px 16px; /* or your preferred size */
+    margin: 0;
+    border: none; /* remove default borders if not styled */
+    font-size: 1rem;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: top;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="p:domain_verify" content="0d3400001a887f6963bd4f8d89eb1f39"/> <!-- Needed to claim pinterest account-->
+    <meta name="description" content="Enjoy an ad-free recipe browsing experience and instantly add ingredients to your cart!">
+    <meta property="og:title" content="Ceres Cart">
+    <meta property="og:description" content="Enjoy an ad-free recipe browsing experience and instantly add ingredients to your cart!">
+    <meta property="og:image" content="images/Ceres Cart Logo.png">
+    <meta property="og:url" content="https://cerescart.com">
+    <meta property="og:type" content="website">
+    <title>Ceres Cart Website</title>
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <link rel="stylesheet" href="./css/allPages.css">
+    <link rel="icon" href="images/Ceres Cart Logo.png" type="image/x-icon">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://www.cerescart.com/",
+          "logo": "images/Ceres Cart Logo.png",
+          "description": "Ceres Cart is an Ad-Free Recipe Viewer that lets you shop groceries from recipes at your local grocery store",
+          "name": "Ceres Cart"
+        }
+    </script>
+</head> 
+<body>  
+    <div id="headerContainer"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("headerContainer").innerHTML = data;
+    
+                    // Now that the header is loaded, attach event listeners
+                    const menuIcon = document.getElementById("menu");
+                    const menuBar = document.getElementById("menuBar");
+    
+                    if (menuIcon && menuBar) {
+                        menuIcon.addEventListener("click", function (event) {
+                            console.log("menu clicked again");
+    
+                            event.preventDefault();
+                            if (menuBar.style.display === "none" || menuBar.style.display === "") {
+                                menuBar.style.display = "block";
+                            } else {
+                                menuBar.style.display = "none";
+                            }
+                        });
+                    } else {
+                        console.error("Menu or MenuBar not found");
+                    }
+                })
+                .catch(error => console.error("Error loading header:", error));
+        });
+    </script>
+    <script type="module">
+        import { findRecipeDataOnPage } from './ReuseCode/findRecipeOnPage.js';
+
+        const params = new URLSearchParams(window.location.search);
+        const recipeURL = params.get('url');
+        console.log('recipeURL:', recipeURL);
+
+        try {
+            const response = await fetch(recipeURL);
+            const html = await response.text();
+
+            // Create a virtual DOM
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            // Query the remote page's DOM
+            const recipeScripts = doc.querySelectorAll('script[type="application/ld+json"]');
+            const recipeScriptArray = Array.from(recipeScripts).map(script => script.textContent);
+
+            const recipe = findRecipeDataOnPage(recipeURL, recipeScriptArray, '');
+            console.log('recipe:', recipe);
+        } catch (err) {
+            console.error('Failed to load recipe page:', err);
+        }
+    </script>
+</body>
+</html>

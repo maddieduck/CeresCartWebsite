@@ -62,12 +62,25 @@
         <div class="text-content">
             <h1 class="fade-in">Remove ads on recipe sites.</h1>
             <h2 id="shopForTheIngredients" class="fade-in">Then shop for the ingredients.</h2>
-            <div class="url-input-container" class="fade-in">
-                <input type="text" placeholder="Paste Recipe URL">
-                <a href="recipe.html" class="button-link">
+            <div class="url-input-container fade-in">
+                <input type="text" id="recipe-url" placeholder="Paste Recipe URL">
+                <a id="get-recipe-link" href="recipe.html" class="button-link">
                     <button class="get-recipe-button fade-in">Get recipe</button>
-                </a>                
+                </a>
             </div>
+            <script>
+                document.getElementById("get-recipe-link").addEventListener("click", function(event) {
+                const input = document.getElementById("recipe-url").value;
+                    if (input.trim() !== "") {
+                        const encodedURL = encodeURIComponent(input);
+                        this.href = `recipe.html?url=${encodedURL}`;
+                    } else {
+                        // Prevent navigation if input is empty
+                        event.preventDefault();
+                        alert("Please enter a recipe URL.");
+                    }
+                });
+            </script>            
         </div>
         <div class="image-container">
             <img class="fade-in" src="images/Ceres Cart Logo.png" alt="Recipe App Mockup">
